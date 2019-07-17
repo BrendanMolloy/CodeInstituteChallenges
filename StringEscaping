@@ -1,0 +1,24 @@
+// These variables should be used in your template literal string:
+var fName = 'Amber';
+var lName = 'Mannington';
+var toEmail = 'amber.mannington@nymo.com';
+var fromEmail = 'a.smith@verizon.com';
+var emailSubject = 'Your Verizon Account';
+
+
+// Define the emailBody variable here
+// Be sure to include all new lines, spacing and tabs appropriately
+var emailBody='To: [toEmail]
+From: [fromEmail]
+Subject: [emailSubject]
+
+Dear [First Name] [Last Name],
+
+This email is to remind you that your Verizon bill is due in three days. You can pay your bill online, or call Verizon to pay over the phone.
+
+If you have any questions or concerns, please do not hesitate to reach out to me!
+
+Best Regards,
+[fromEmail]'
+// This line will log the emailBody variable to the console
+console.log(emailBody);
