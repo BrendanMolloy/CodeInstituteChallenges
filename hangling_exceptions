@@ -1,0 +1,29 @@
+// Define the validateNumbers() function here:
+function validateNumbers(a,b,method){
+  if(typeof(a&&b)!=="number"){
+      throw new Error ("Both arguments must be numbers.");
+    }else if(b === 0 && method === "divide"){
+      throw new Error ("Cannot divide by zero.");
+    }
+}
+
+// Create the calculator object here:
+var calculator={
+  validateNumbers: function(a,b,method){},
+  add: function(a,b){
+    return(a+b);
+  },
+    subtract: function(a,b){
+    return(a-b);
+  },
+    multiply: function(a,b){
+    return(a*b);
+  },
+  divide: function(a,b){
+    return(a/b);
+    }
+}
+
+// Try calling your methods here with different arguments
+// to verify that your error handling is working:
+calculator.divide(1, 0);
